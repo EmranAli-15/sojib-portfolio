@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #333;
+}
+.nav{
+    display: flex;
+    justify-content: end;
+    margin: 15px 20px 15px 0;
+}
+.offcanvas{
+    --bs-offcanvas-width: 250px;
+}
+.offcanvas-body ul li{
+    list-style: none;
+    padding-bottom: 10px;
+}
+.btn{
+    background-color: rgb(240, 240, 102);
+}
+.btn:hover{
+    background-color: yellow;
+}
+
+
+/* about section styles */
+
+.banner{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgb(240, 240, 102);
+}
+.split{
+    width: 50%;
+}
+.banner .img, .banner .about{
+    width: 100%;
+}
+.banner .img img{
+    position: relative;
+    top: 25px;
+    left: 25px;
+    width: 300px;
+    height: 350px;
+    border-radius: 50%;
+}
+.banner .about{
+    margin: 25px;
+}
+.banner .about h1{
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    padding-left: 10px;
+}
+.banner .about p{
+    color: grey;
+}
+
+main{
+    margin: 50px 75px;
+}
+
+
+/* my-design-about */
+.my-design-about{
+    text-align: center;
+    color: white;
+    margin-bottom: 45px;
+}
+.my-design-about h1{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.my-design-about p{
+    color: grey;
+}
+
+/* my-design section styles */
+.my-design{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    justify-content: space-evenly;
+}
+.my-design img{
+    width: 250px;
+    height: 250px;
+    border-radius: 5px;
+}
+.Myself{
+    display: flex;
+    justify-content: center;
+}
+.accordion{
+    margin-bottom: 20px;
+}
+
+.email{
+    font-weight: bold;
+}
+a{
+    text-decoration: none;
+}
+
+
+
+/* media query */
+@media screen and (max-width: 576px) {
+    .banner, main, .my-design, .split, header{
+        display: block;
+        margin: 0 5px;
+        width: 100%;
+    }
+    .my-design{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .my-design img{
+        width: 180px;
+        height: 180px;
+    }
+    .banner .about{
+        margin: 25px 0;
+    }
+    .banner .about p{
+        text-align: center;
+        padding: 0 7px;
+    }
+}
+
+
+
